@@ -21,11 +21,19 @@ Authors :
 <img src="ressources/culture.JPG">
 
 ## About the notebooks
-There is a notebook `train_model.ipynb` which contains the code to train a model with the GPU of colab. There is no need in executing this file because we
-saved the model in the file `vgg16_culture_customized.h5`.
+In the folder `notebooks` There is a notebook `train_model.ipynb` which contains the code to train a model with the GPU of colab. There is no need in executing this file because we
+saved the model in the file `vgg16_culture_customized.h5` stored in the folder model.
 If you want to execute a notebook to see the performance of this model, you can use `performance_model_vgg16.ipynb `
 
 ## Metrics used 
 
 * The Negative log likelihood, this loss function is often used for multiclass classification problems
 * We will also look at the accuracy of our results
+
+## Applications
+I made a website where you upload an image and you can get the culture of the artwork represented.
+All the files are stored in the folder Applications
+I made the `backend` with `FastAPI` and the `frontend` with `streamlit`.
+To run the Application, you have to use 2 terminals at the root of this repo and run the following commands:
+ * 1st terminal : uvicorn Applications.backend:app --reload
+ * 2nd terminal : streamlit run Applications/frontend.py

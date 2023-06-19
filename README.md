@@ -31,7 +31,7 @@ If you want to execute a notebook to see the performance of this model, you can 
 * We will also look at the accuracy of our results
 
 ## Applications
-I made a website where you upload an image and you can get the culture of the artwork represented.
+I made a website where you can upload an image and you can get the culture of the artwork represented.
 All the files are stored in the folder Applications
 I made the `backend` with `FastAPI` and the `frontend` with `streamlit`.
 To run the Application, you have to use 2 terminals at the root of this repo and run the following commands:
